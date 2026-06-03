@@ -4,13 +4,13 @@ title: "String Immutability Trap"
 category: "Java Basics"
 difficulty: "BEGINNER"
 status: "in_progress"
-attempts: 1
+attempts: 2
 first_attempt_at: "2026-06-03T13:36:45.729111543Z"
-last_attempt_at: "2026-06-03T13:36:45.729111543Z"
+last_attempt_at: "2026-06-03T13:37:17.167004595Z"
 last_code: |
   public class StringTest {
       public static void main(String[] args) {
-          StringBuilder s = "hello";
+          String s = "hello";
           s.toUpperCase();
           s.concat(" WORLD");
           System.out.println(s);
