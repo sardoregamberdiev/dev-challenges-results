@@ -4,16 +4,16 @@ title: "String Immutability Trap"
 category: "Java Basics"
 difficulty: "BEGINNER"
 status: "in_progress"
-attempts: 3
+attempts: 4
 first_attempt_at: "2026-06-03T13:36:45.729111543Z"
-last_attempt_at: "2026-06-03T13:37:24.159829717Z"
+last_attempt_at: "2026-06-03T13:38:56.392039266Z"
 last_code: |
   public class StringTest {
       public static void main(String[] args) {
           String s = "hello";
           s.toUpperCase();
-          s.concat(" WORLD");
-          System.out.println(s);
+          String result = s.concat(" WORLD");
+          System.out.println(result);
       }
   }
   
