@@ -3,18 +3,18 @@ sample: "java-cert"
 title: "String Immutability Trap"
 category: "Java Basics"
 difficulty: "BEGINNER"
-status: "solved"
-attempts: 5
+status: "in_progress"
+attempts: 6
 first_attempt_at: "2026-06-03T13:36:45.729111543Z"
-last_attempt_at: "2026-06-03T13:39:50.567063727Z"
+last_attempt_at: "2026-06-03T13:40:25.959472652Z"
 solved_at: "2026-06-03T13:39:50.567063727Z"
 last_code: |
   public class StringTest {
       public static void main(String[] args) {
           String s = "hello";
-          String result = s.toUpperCase();
-          String last = result.concat(" WORLD");
-          System.out.println(last);
+          s = s.toUpperCase();
+          s = result.concat(" WORLD");
+          System.out.println(s);
       }
   }
   
